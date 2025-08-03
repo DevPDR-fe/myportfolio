@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cal+Sans&family=Nunito:ital,wght@0,200..1000;1,200..1000');
+
+/* Comfortaa */
+@font-face {
+  font-family: 'Comfortaa';
+  src: url('../assets/fonts/Comfortaa-Light.ttf') format('truetype');
+  font-weight: 300;
+}
+@font-face {
+  font-family: 'Comfortaa';
+  src: url('../assets/fonts/Comfortaa-Regular.ttf') format('truetype');
+  font-weight: 400;
+}
+@font-face {
+  font-family: 'Comfortaa';
+  src: url('../assets/fonts/Comfortaa-Bold.ttf') format('truetype');
+  font-weight: 700;
+}
+
+/* Creato Display */
+@font-face {
+  font-family: 'CreatoDisplay';
+  src: url('../assets/fonts/CreatoDisplay-Thin.otf') format('opentype');
+  font-weight: 100;
+}
+@font-face {
+  font-family: 'CreatoDisplay';
+  src: url('../assets/fonts/CreatoDisplay-ThinItalic.otf') format('opentype');
+  font-weight: 100;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'CreatoDisplay';
+  src: url('../assets/fonts/CreatoDisplay-Light.otf') format('opentype');
+  font-weight: 300;
+}
+@font-face {
+  font-family: 'CreatoDisplay';
+  src: url('../assets/fonts/CreatoDisplay-LightItalic.otf') format('opentype');
+  font-weight: 300;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'CreatoDisplay';
+  src: url('../assets/fonts/CreatoDisplay-Regular.otf') format('opentype');
+  font-weight: 400;
+}
+@font-face {
+  font-family: 'CreatoDisplay';
+  src: url('../assets/fonts/CreatoDisplay-RegularItalic.otf') format('opentype');
+  font-weight: 400;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'CreatoDisplay';
+  src: url('../assets/fonts/CreatoDisplay-Medium.otf') format('opentype');
+  font-weight: 500;
+}
+@font-face {
+  font-family: 'CreatoDisplay';
+  src: url('../assets/fonts/CreatoDisplay-MediumItalic.otf') format('opentype');
+  font-weight: 500;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'CreatoDisplay';
+  src: url('../assets/fonts/CreatoDisplay-Bold.otf') format('opentype');
+  font-weight: 700;
+}
+@font-face {
+  font-family: 'CreatoDisplay';
+  src: url('../assets/fonts/CreatoDisplay-BoldItalic.otf') format('opentype');
+  font-weight: 700;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'CreatoDisplay';
+  src: url('../assets/fonts/CreatoDisplay-ExtraBold.otf') format('opentype');
+  font-weight: 800;
+}
+@font-face {
+  font-family: 'CreatoDisplay';
+  src: url('../assets/fonts/CreatoDisplay-ExtraBoldItalic.otf') format('opentype');
+  font-weight: 800;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'CreatoDisplay';
+  src: url('../assets/fonts/CreatoDisplay-BlackItalic.otf') format('opentype');
+  font-weight: 900;
+  font-style: italic;
+}
+
+/* Higher (2 formatos) */
+@font-face {
+  font-family: 'Higher';
+  src: url('../assets/fonts/Higher.otf') format('opentype');
+}
+@font-face {
+  font-family: 'Higher';
+  src: url('../assets/fonts/Higher.ttf') format('truetype');
+}
+
+/* Pricedown Blot */
+@font-face {
+  font-family: 'Pricedown Blot';
+  src: url('../assets/fonts/Pricedown Bl.otf') format('opentype');
+}
