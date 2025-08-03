@@ -1,57 +1,29 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
+  <meta property="og:title" content="Portfolio Front-End by developer PDR" />
+  <meta property="og:description" content="Confira meu portfólio de desenvolvedor front-end." />
+  <meta property="og:image" content="https://devpdr.com.br/assets/images/imagem-preview.webp" />
+  <meta property="og:url" content="https://devpdr.com.br" />
+  <meta property="og:type" content="website" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Portfolio Front-End by developer PDR" />
+  <meta name="twitter:description" content="Confira meu portfólio de desenvolvedor front-end." />
+  <meta name="twitter:image" content="https://devpdr.com.br/assets/images/imagem-preview.webp" />
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Portfolio Front-End by developer PDR.">
-  <meta name="author" content="PDR">
-  <link rel="stylesheet" href="css/portfolio.css">
-  <link rel="icon" href="favicon-hero.png" type="image/png">
-  <title>PDR Developer</title>
+  <title>Carregando...</title>
+  <link rel="stylesheet" href="css/index.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <link rel="icon" href="favicon-load.png" type="image/png">
 </head>
 <body>
-  <section class="home">
-  <nav class="navbar">
-    <img src="favicon-hero.png" alt="Logotipo" class="icon-logotipo">
-  <div class="logotipo">
-    <h1>PDR</h1>
+  <div class="preloader">
+    <div class="spinner"></div>
+    <div class="progress-bar">
+      <div class="bar"></div>
+    </div>
   </div>
 
-  <div class="menu">
-    <img src="assets/icons/home.png" alt="Home" class="icons-menu">
-    <img src="assets/icons/management.png" alt="Skills" class="icons-menu">
-    <img src="assets/icons/project.png" alt="Projects" class="icons-menu">
-    <img src="assets/icons/add-user.png" alt="Contacts" class="icons-menu">
-  </div>
-</nav>
-
-  <header id="home" class="header">
-    <div class="headline">
-      <h2>Olá, eu me chamo Pedro!</h2>
-      <h2 id="dev">Desenvolvedor Front-End</h2>
-      <p style="margin-bottom: 0;">
-        Está buscando performance, responsividade e um código limpo sem estourar seu orçamento?
-        Pare de perder tempo e dinheiro! Aqui é o local certo para você, encontre soluções front-end modernas,
-        organizadas e preparadas para qualquer dispositivo, entregando resultados reais e rápidos a custo-benefício.
-      </p>
-      <p style="font-weight: 800; margin-top: 5px;">
-        Não deixe para depois, seu projeto merece o melhor AGORA!
-      </p>
-      <a class="contact-button" href="#">Me contate!</a>
-    </div>
-
-    <div class="profile-headline">
-        <img src="assets/images/wakanda2.webp" alt="Logotipo máscara do pantera negra (wakanda)" class="wakanda">
-    </div>
-  </header>
-
-  <container class="container-about">
-    <div class="c-about">
-
-    </div>
-  </container>
-  </section>
-
-  <script src="js/portfolio.js"></script>
+  <script src="js/index.js"></script>
 </body>
 </html>
