@@ -19,7 +19,7 @@ body {
     background: rgb(0, 0, 0);
     background: radial-gradient(circle at 20% 20%, #0e0e0e 0%, #000 100%);
   background-size: 200% 200%;
-  animation: pulse 6s ease-in-out infinite;
+  animation: pulse 8s ease-in-out infinite;
 }
 
 @keyframes pulse {
@@ -155,6 +155,8 @@ body {
     margin-bottom: 70px;
     margin-right: 15%;
     object-fit: cover;
+    mix-blend-mode: screen;
+    opacity: 0.8;
 }
 
 .contact-button { 
