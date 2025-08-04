@@ -21,7 +21,23 @@
     <img src="assets/icons/home.png" alt="Home" class="icons-menu">
     <img src="assets/icons/management.png" alt="Skills" class="icons-menu">
     <img src="assets/icons/project.png" alt="Projects" class="icons-menu">
-    <img src="assets/icons/add-user.png" alt="Contacts" class="icons-menu">
+    <div class="contact-dropdown">
+  <img src="assets/icons/add-user.png" alt="Contacts" id="contactToggle" class="icons-menu">
+  <div id="contactMenu" class="contact-menu">
+    <a href="https://wa.me/SEUNUMERO" target="_blank">
+      <img src="assets/icons/whatsapp.png" alt="">  WhatsApp
+    </a>
+    <a href="https://www.linkedin.com/in/SEULINKEDIN" target="_blank">
+      <img src="assets/icons/linkedin.png" alt="">  LinkedIn
+    </a>
+    <a href="https://github.com/SEUGITHUB" target="_blank">
+      <img src="assets/icons/github.png" alt="">  GitHub
+    </a>
+    <a href="https://discord.com/users/SEUDISCORD" target="_blank">
+      <img src="assets/icons/discordia.png" alt="">  Discord
+    </a>
+  </div>
+</div>
   </div>
 </nav>
 
@@ -44,14 +60,37 @@
         <img src="assets/images/wakanda2.webp" alt="Logotipo máscara do pantera negra (wakanda)" class="wakanda">
     </div>
   </header>
+  </section>
 
-  <container class="container-about">
+  <container id="container-about" class="container-about">
+    <div id="particles-js" class="background-particles"></div>
     <div class="c-about">
+      <h2>Habilidades</h2>
+
+    <div class="circle-container">
+      <div class="circle big"></div>
+      <div class="circle small"></div>
+
+      <div class="orbit-group big">
+      <img src="assets/icons/html.png" class="orbit-icon big top">
+  <img src="assets/icons/css.png" class="orbit-icon big right">
+  <img src="assets/icons/javascript.png" class="orbit-icon big bottom">
+  <img src="assets/icons/typescript.png" class="orbit-icon big left">
+      </div>
+
+      <div class="orbit-group small">
+  <img src="assets/icons/react.png" class="orbit-icon small top">
+  <img src="assets/icons/bootstrap.jpeg" class="orbit-icon small right">
+  <img src="assets/icons/sass.png" class="orbit-icon small bottom">
+  <img src="assets/icons/tailwind.jpeg" class="orbit-icon small left">
+      </div>
+
+    </div>
 
     </div>
   </container>
-  </section>
 
+  <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
   <script src="js/portfolio.js"></script>
 </body>
 </html>
