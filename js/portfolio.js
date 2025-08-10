@@ -79,70 +79,40 @@ window.addEventListener("load", () => {
     });
   });
 
-  particlesJS("particles-js", {
-  "particles": {
-    "number": {
-      "value": 80,
-      "density": {
-        "enable": true,
-        "value_area": 800
+  document.addEventListener("DOMContentLoaded", () => {
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        const group = entry.target.dataset.group;
+        const index = parseInt(entry.target.dataset.index, 10);
+        const delay = index * 0.2; // cada item +0.2s
+
+        setTimeout(() => {
+          entry.target.classList.add('active');
+        }, delay * 1000);
+
+        observer.unobserve(entry.target);
       }
-    },
-    "color": {
-      "value": "#000000"  // ← preto
-    },
-    "shape": {
-      "type": "circle",
-      "stroke": {
-        "width": 0,
-        "color": "#000000"
-      },
-    },
-    "opacity": {
-      "value": 0.5,
-      "random": false
-    },
-    "size": {
-      "value": 3,
-      "random": true
-    },
-    "line_linked": {
-      "enable": true,
-      "distance": 150,
-      "color": "#000000",
-      "opacity": 0.4,
-      "width": 1
-    },
-    "move": {
-      "enable": true,
-      "speed": 2,
-      "direction": "none",
-      "random": false,
-      "straight": false,
-      "bounce": false
-    }
-  },
-  "interactivity": {
-    "detect_on": "canvas",
-    "events": {
-      "onhover": {
-        "enable": true,
-        "mode": "repulse"
-      },
-      "onclick": {
-        "enable": true,
-        "mode": "push"
-      }
-    },
-    "modes": {
-      "repulse": {
-        "distance": 100,
-        "duration": 0.4
-      },
-      "push": {
-        "particles_nb": 4
-      }
-    }
-  },
-  "retina_detect": true
+    });
+  }, { threshold: 0.1 });
+
+  // grupos na ordem desejada
+  const animationGroups = [
+    ['.text-subtitle', '.text-tagline'],
+    ['.intro', '.name'],
+    ['.description', '.btn'],
+    ['.profile-pic'],
+    ['.stat-card.left', '.stat-card.right']
+  ];
+
+  animationGroups.forEach((group, groupIndex) => {
+    group.forEach((selector, index) => {
+      document.querySelectorAll(selector).forEach(el => {
+        el.classList.add('reveal');
+        el.dataset.group = groupIndex;
+        el.dataset.index = index;
+        observer.observe(el);
+      });
+    });
+  });
 });
